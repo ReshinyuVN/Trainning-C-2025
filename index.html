@@ -1,15 +1,16 @@
 <!DOCTYPE html>
 <html lang="vi">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Hướng dẫn Cài đặt Code::Blocks (v25.03)</title>
-    <!-- Tải Tailwind CSS -->
     <script src="https://cdn.tailwindcss.com"></script>
     <!-- Sử dụng font Inter -->
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap">
     <link rel="stylesheet" href="style.css">
 </head>
+
 <body class="bg-gray-50 text-gray-800">
 
     <div class="container mx-auto max-w-3xl px-4 py-10">
@@ -23,42 +24,48 @@
         <main class="bg-white p-6 md:p-10 rounded-xl shadow-lg">
 
             <!-- Lời mở đầu -->
-            <p class="text-lg mb-6">Chào các bạn học sinh, để đảm bảo cả lớp chúng ta sử dụng chung một công cụ lập trình C++ (gọi là IDE), chúng ta sẽ cùng nhau cài đặt <strong>Code::Blocks</strong>. Đây là một IDE miễn phí, nhẹ nhàng và rất phù hợp cho người mới bắt đầu.</p>
+            <p class="text-lg mb-6">Chào các bạn học sinh, để đảm bảo cả lớp chúng ta sử dụng chung một công cụ lập
+                trình C++ (gọi là IDE), chúng ta sẽ cùng nhau cài đặt <strong>Code::Blocks</strong>. Đây là một IDE miễn
+                phí, nhẹ nhàng và rất phù hợp cho người mới bắt đầu.</p>
 
             <!-- Phần 1: Tải về -->
             <section>
                 <h2 class="text-3xl font-bold mb-6">Phần 1: Tải về (Bước quan trọng nhất!)</h2>
-                <p class="mb-4">Đây là bước dễ nhầm lẫn nhất. Các bạn phải tải đúng phiên bản có kèm theo "trình biên dịch" (compiler) - công cụ để dịch code của bạn sang ngôn ngữ máy tính.</p>
+                <p class="mb-4">Đây là bước dễ nhầm lẫn nhất. Các bạn phải tải đúng phiên bản có kèm theo "trình biên
+                    dịch" (compiler) - công cụ để dịch code của bạn sang ngôn ngữ máy tính.</p>
 
                 <!-- Cảnh báo quan trọng -->
                 <div class="alert-warning p-4 rounded-lg my-6">
                     <h4 class="font-bold text-lg mb-2">Chú ý QUAN TRỌNG!</h4>
-                    <p>Phiên bản chúng ta cần tải là bản <strong>25.03</strong> VÀ có chữ <code>mingw</code> trong tên file. Tên chính xác là:</p>
+                    <p>Phiên bản chúng ta cần tải là bản <strong>25.03</strong> VÀ có chữ <code>mingw</code> trong tên
+                        file. Tên chính xác là:</p>
                     <p class="my-2 text-center"><code class="text-lg">codeblocks-25.03mingw-setup.exe</code></p>
                 </div>
-                
+
                 <div class="alert-danger p-4 rounded-lg my-6">
                     <h4 class="font-bold text-lg mb-2">CẢNH BÁO!</h4>
-                    <p>Tuyệt đối <strong>KHÔNG</strong> tải tệp chỉ có tên <code>codeblocks-25.03-setup.exe</code> (bản không có <code>mingw</code>). Nếu tải tệp này, bạn sẽ không thể biên dịch và chạy code được.</p>
+                    <p>Tuyệt đối <strong>KHÔNG</strong> tải tệp chỉ có tên <code>codeblocks-25.03-setup.exe</code> (bản
+                        không có <code>mingw</code>). Nếu tải tệp này, bạn sẽ không thể biên dịch và chạy code được.</p>
                 </div>
 
                 <!-- Nút tải về trực tiếp -->
                 <div class="text-center my-8">
-                    <a href="https://sourceforge.net/projects/codeblocks/files/Binaries/25.03/Windows/codeblocks-25.03mingw-setup.exe/download" target="_blank" rel="noopener noreferrer" class="btn-download">
+                    <a href="https://sourceforge.net/projects/codeblocks/files/Binaries/25.03/Windows/codeblocks-25.03mingw-setup.exe/download"
+                        target="_blank" rel="noopener noreferrer" class="btn-download">
                         Nhấn vào đây để tải về
                         <br>
                         (Bản 25.03 có Mingw)
                     </a>
-                    <p class="text-sm text-gray-500 mt-3">Link sẽ mở ra trang SourceForge và tự động tải về sau vài giây.</p>
+                    <p class="text-sm text-gray-500 mt-3">Link sẽ mở ra trang SourceForge và tự động tải về sau vài
+                        giây.</p>
                 </div>
 
                 <!-- Hình ảnh minh họa -->
                 <div class="my-6 p-4 border border-gray-200 rounded-lg bg-gray-50 text-center">
                     <p class="text-sm text-gray-500 mb-2">File bạn tải về sẽ có tên như thế này</p>
-                    <img src="https://placehold.co/600x150/e0e7ff/3730a3?text=codeblocks-25.03mingw-setup.exe" 
-                         alt="[Ảnh minh họa file codeblocks-25.03mingw-setup.exe]"
-                         class="w-full rounded-md shadow-sm"
-                         onerror="this.src='https://placehold.co/600x150?text=Loi+tai+anh'">
+                    <img src="https://placehold.co/600x150/e0e7ff/3730a3?text=codeblocks-25.03mingw-setup.exe"
+                        alt="[Ảnh minh họa file codeblocks-25.03mingw-setup.exe]" class="w-full rounded-md shadow-sm"
+                        onerror="this.src='https://placehold.co/600x150?text=Loi+tai+anh'">
                 </div>
 
             </section>
@@ -66,14 +73,18 @@
             <!-- Phần 2: Cài đặt -->
             <section>
                 <h2 class="text-3xl font-bold">Phần 2: Cài đặt chương trình</h2>
-                <p class="mb-4">Sau khi tải xong tệp <code>.exe</code>, bạn hãy mở nó lên để cài đặt. Các bước cài đặt rất đơn giản:</p>
+                <p class="mb-4">Sau khi tải xong tệp <code>.exe</code>, bạn hãy mở nó lên để cài đặt. Các bước cài đặt
+                    rất đơn giản:</p>
                 <ol class="list-decimal list-inside space-y-3">
                     <li><strong>Welcome:</strong> Nhấn <strong>Next</strong> để tiếp tục.</li>
                     <li><strong>License Agreement (Điều khoản):</strong> Nhấn <strong>I Agree</strong>.</li>
-                    <li><strong>Choose Components (Chọn thành phần):</strong> Cứ để mặc định là "Full". Nhấn <strong>Next</strong>.</li>
-                    <li><strong>Install Location (Chọn nơi cài đặt):</strong> Bạn nên để đường dẫn mặc định. Nhấn <strong>Install</strong>.</li>
+                    <li><strong>Choose Components (Chọn thành phần):</strong> Cứ để mặc định là "Full". Nhấn
+                        <strong>Next</strong>.</li>
+                    <li><strong>Install Location (Chọn nơi cài đặt):</strong> Bạn nên để đường dẫn mặc định. Nhấn
+                        <strong>Install</strong>.</li>
                     <li>Chờ cho chương trình cài đặt xong.</li>
-                    <li>Một hộp thoại sẽ hiện ra hỏi: "Do you want to run Code::Blocks now?". Bạn có thể nhấn <strong>Yes</strong> để chạy luôn.</li>
+                    <li>Một hộp thoại sẽ hiện ra hỏi: "Do you want to run Code::Blocks now?". Bạn có thể nhấn
+                        <strong>Yes</strong> để chạy luôn.</li>
                 </ol>
             </section>
 
@@ -84,33 +95,36 @@
                 <ol class="list-decimal list-inside space-y-3">
                     <li>Một cửa sổ "Compiler auto-detection" (Tự động phát hiện trình biên dịch) sẽ hiện lên.</li>
                     <li>Nó sẽ tìm thấy <strong>"GNU GCC Compiler"</strong> và hiển thị trong danh sách.</li>
-                    <li>Bạn chỉ cần nhấn vào dòng đó, sau đó nhấn nút <strong>"Set as default"</strong> (Đặt làm mặc định).</li>
+                    <li>Bạn chỉ cần nhấn vào dòng đó, sau đó nhấn nút <strong>"Set as default"</strong> (Đặt làm mặc
+                        định).</li>
                     <li>Nhấn <strong>OK</strong>.</li>
                 </ol>
                 <div class="my-6 p-4 border border-gray-200 rounded-lg bg-gray-50 text-center">
                     <p class="text-sm text-gray-500 mb-2">Hình minh họa chọn trình biên dịch</p>
-                    <img src="https://th.bing.com/th/id/R.29c8cee004a8ebc0717e14234ecf3e07?rik=8R1E%2bHnycRwItg&riu=http%3a%2f%2flinguagemc.com.br%2fwp-content%2fuploads%2f2012%2f03%2fcodeblocks-figura6.jpg&ehk=BOZCki54eKBIsdQdKJV6m%2b5FoFFSf8NJycIlmViZmI8%3d&risl=&pid=ImgRaw&r=0" 
-                         alt="[Ảnh chụp màn hình hộp thoại chọn trình biên dịch Code::Blocks]"
-                         class="w-full rounded-md shadow-sm"
-                         onerror="this.src='https://placehold.co/600x200?text=Loi+tai+anh'">
+                    <img src="https://th.bing.com/th/id/R.29c8cee004a8ebc0717e14234ecf3e07?rik=8R1E%2bHnycRwItg&riu=http%3a%2f%2flinguagemc.com.br%2fwp-content%2fuploads%2f2012%2f03%2fcodeblocks-figura6.jpg&ehk=BOZCki54eKBIsdQdKJV6m%2b5FoFFSf8NJycIlmViZmI8%3d&risl=&pid=ImgRaw&r=0"
+                        alt="[Ảnh chụp màn hình hộp thoại chọn trình biên dịch Code::Blocks]"
+                        class="w-full rounded-md shadow-sm"
+                        onerror="this.src='https://placehold.co/600x200?text=Loi+tai+anh'">
                 </div>
             </section>
-            
+
             <!-- Phần 4: Chạy thử -->
             <section>
                 <h2 class="text-3xl font-bold">Phần 4: Tạo và Chạy chương trình "Hello World"</h2>
                 <p class="mb-4">Bây giờ chúng ta sẽ kiểm tra xem mọi thứ đã hoạt động đúng chưa.</p>
                 <ol class="list-decimal list-inside space-y-3">
-                    <li>Vào menu <strong>File</strong> &rarr; <strong>New</strong> &rarr; <strong>Project...</strong></li>
+                    <li>Vào menu <strong>File</strong> &rarr; <strong>New</strong> &rarr; <strong>Project...</strong>
+                    </li>
                     <li>Chọn <strong>"Console application"</strong> và nhấn <strong>Go</strong>.</li>
                     <li>Nhấn <strong>Next</strong>, sau đó chọn ngôn ngữ là <strong>C++</strong>.</li>
                     <li><strong>Project title:</strong> Gõ vào tên dự án, ví dụ: <code>HelloWorld</code>.</li>
                     <li><strong>Folder to create project in:</strong> Chọn một thư mục dễ nhớ để lưu code.</li>
                     <li>Nhấn <strong>Next</strong>, sau đó nhấn <strong>Finish</strong>.</li>
                 </ol>
-                
-                <p class="my-4">Dự án của bạn đã được tạo. Ở cửa sổ bên trái, bạn hãy mở rộng <strong>Sources</strong> và nháy đúp chuột vào tệp <strong><code>main.cpp</code></strong>.</p>
-                
+
+                <p class="my-4">Dự án của bạn đã được tạo. Ở cửa sổ bên trái, bạn hãy mở rộng <strong>Sources</strong>
+                    và nháy đúp chuột vào tệp <strong><code>main.cpp</code></strong>.</p>
+
                 <p>Màn hình soạn thảo sẽ hiện ra đoạn code C++ mẫu:</p>
                 <!-- Code mẫu -->
                 <pre class="rounded-lg my-4 overflow-x-auto"><code class="language-cpp">#include &lt;iostream&gt;
@@ -124,23 +138,25 @@ int main()
 }
 </code></pre>
             </section>
-            
+
             <!-- Phần 5: Chạy chương trình -->
             <section>
                 <h2 class="text-3xl font-bold">Phần 5: Chạy chương trình</h2>
-                <p class="mb-4">Trên thanh công cụ, bạn hãy tìm nút <strong>Build and Run</strong> (có hình bánh răng cưa và mũi tên tam giác màu xanh, phím tắt là <strong>F9</strong>).</p>
-                
+                <p class="mb-4">Trên thanh công cụ, bạn hãy tìm nút <strong>Build and Run</strong> (có hình bánh răng
+                    cưa và mũi tên tam giác màu xanh, phím tắt là <strong>F9</strong>).</p>
+
                 <div class="my-6 p-4 border border-gray-200 rounded-lg bg-gray-50 text-center">
                     <p class="text-sm text-gray-500 mb-2">Nút "Build and Run" quan trọng</p>
-                    <img src="https://www.testingdocs.com/wp-content/uploads/Run-C-Project-1024x554.png" 
-                         alt="[Ảnh của nút Build and Run trên thanh công cụ Code::Blocks]"
-                         class="w-full rounded-md shadow-sm"
-                         onerror="this.src='https://placehold.co/600x150?text=Loi+tai+anh'">
+                    <img src="https://codeforwin.org/wp-content/uploads/2017/08/7-build-and-run-your-c-program.png"
+                        alt="[Ảnh của nút Build and Run trên thanh công cụ Code::Blocks]"
+                        class="w-full rounded-md shadow-sm"
+                        onerror="this.src='https://placehold.co/600x150?text=Loi+tai+anh'">
                 </div>
 
-                <p>Nhấn vào nút đó. Nếu mọi thứ chính xác, một cửa sổ console (màu đen) sẽ hiện lên và in ra dòng chữ:</p>
+                <p>Nhấn vào nút đó. Nếu mọi thứ chính xác, một cửa sổ console (màu đen) sẽ hiện lên và in ra dòng chữ:
+                </p>
                 <pre class="rounded-lg my-4"><code class="language-text">Hello world!</code></pre>
-                
+
                 <div class="mt-8 p-6 bg-green-50 text-green-800 border-l-4 border-green-500 rounded-lg">
                     <h3 class="text-2xl font-bold">🎉 Chúc mừng!</h3>
                     <p class="mt-2 text-lg">Bạn đã cài đặt thành công Code::Blocks và sẵn sàng để học C++!</p>
@@ -149,13 +165,15 @@ int main()
 
             <!-- Phần 6: Lỗi thường gặp -->
             <section>
-                <h2 class="text-3xl font-bold">Nếu gặp lỗi?</h2>
+                <h2 class="section-title">Nếu gặp lỗi?</h2>
                 <div class="alert-danger p-4 rounded-lg my-6">
                     <h4 class="font-bold text-lg mb-2">Lỗi "can't find compiler executable"?</h4>
-                    <p>Rất có thể bạn đã không tải đúng file, hoặc đã nhấn <strong>Cancel</strong> ở bước <strong>Phần 3</strong>. Hãy gỡ cài đặt Code::Blocks và làm lại, đảm bảo bạn tải đúng tệp <strong><code>mingw</code></strong> và chọn "GNU GCC Compiler" làm mặc định.</p>
+                    <p>Rất có thể bạn đã không tải đúng file, hoặc đã nhấn <strong>Cancel</strong> ở bước <strong>Phần
+                            3</strong>. Hãy gỡ cài đặt Code::Blocks và làm lại, đảm bảo bạn tải đúng tệp
+                        <strong><code>mingw</code></strong> và chọn "GNU GCC Compiler" làm mặc định.</p>
                 </div>
             </section>
-        
+
         </main>
 
         <footer class="text-center mt-8 text-gray-500 text-sm">
@@ -165,4 +183,5 @@ int main()
     </div>
 
 </body>
+
 </html>
